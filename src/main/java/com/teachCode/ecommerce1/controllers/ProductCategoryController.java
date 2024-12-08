@@ -2,6 +2,7 @@ package com.teachCode.ecommerce1.controllers;
 
 
 import com.teachCode.ecommerce1.entities.ProductCategory;
+import com.teachCode.ecommerce1.services.ProductCategoryServiceImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

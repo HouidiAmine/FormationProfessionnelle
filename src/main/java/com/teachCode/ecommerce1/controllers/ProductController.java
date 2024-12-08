@@ -2,6 +2,7 @@ package com.teachCode.ecommerce1.controllers;
 
 
 import com.teachCode.ecommerce1.entities.Product;
+import com.teachCode.ecommerce1.services.ProductsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;

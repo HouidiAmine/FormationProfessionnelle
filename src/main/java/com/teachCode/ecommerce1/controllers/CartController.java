@@ -5,6 +5,7 @@ package com.teachCode.ecommerce1.controllers;
 import com.teachCode.ecommerce1.dto.request.CartDto;
 import com.teachCode.ecommerce1.dto.response.DtoCart;
 import com.teachCode.ecommerce1.services.CartService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +13,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/cart")
-@CrossOrigin()
+@CrossOrigin(origins = "http://localhost:8084")
+@Slf4j
 //@CrossOrigin(origins = "http://example.com", methods = {RequestMethod.GET, RequestMethod.POST})
 //@CrossOrigin(origins = "http://localhost:3000") // Permet uniquement à React de faire des requêtes
 

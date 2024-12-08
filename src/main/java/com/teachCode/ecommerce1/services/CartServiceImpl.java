@@ -48,7 +48,7 @@ public class CartServiceImpl implements CartService {
                 // Increment the quantity and update
                 // the price if the product exists in the cart
                 cartItems = optionalCartItems.get();
-                cartItems.setProductQuantity(cartItems.getProductQuantity() + 1);
+                cartItems.setProductQuantity(cartItems.getProductQuantity() + cartDto.getProductQuantity());
                 // Update price as needed
               //  cartItems.setProductPrice(cartItems.getProductPrice() * 2);
                 cartItemsRepository.save(cartItems);
